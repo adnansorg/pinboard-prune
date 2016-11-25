@@ -1,0 +1,28 @@
+{
+  "name": "chrome-extension-boilerplate",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "adnans <ad@in1solutions.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/oimou/chrome-extension-boilerplate",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "material-design-lite": "~1.0.6"
+  },
+  "overrides": {
+    "jquery": {
+      "main": "**/*.min.js"
+    }
+  }
+}

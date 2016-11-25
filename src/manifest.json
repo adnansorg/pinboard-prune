@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "pinboard-prune",
+  "description": "filter pinboard.in/recent posts by 20 or more...",
+  "version": "1.0.2",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://pinboard.in/recent*",
+        "https://pinboard.in/search/*"
+      ],
+      "js": [
+        "jquery.min.js",
+        "material.min.js",
+        "bundle.js"
+      ],
+      "css": [
+        "material.min.css"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "https://pinboard.in/recent*"
+  ]
+}
